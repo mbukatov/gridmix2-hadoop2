@@ -1,0 +1,5 @@
+export HADOOP_VERSION=2.2.0.2.0.6.0-101
+export HADOOP_HOME=/usr/lib/hadoop/
+export HADOOP_CONF_DIR=/etc/hadoop/conf
+export EXAMPLE_JAR=/usr/lib/hadoop-mapreduce/hadoop-mapreduce-examples-$HADOOP_VERSION.jar
+export STREAMING_JAR=/usr/lib/hadoop-mapreduce/hadoop-streaming-$HADOOP_VERSION.jar

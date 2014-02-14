@@ -1,0 +1,5 @@
+export HADOOP_VERSION=1.1.2.21
+export HADOOP_HOME=/opt/hadoop-$HADOOP_VERSION
+export HADOOP_CONF_DIR=$HADOOP_HOME/conf
+export EXAMPLE_JAR=$HADOOP_HOME/hadoop-examples-$HADOOP_VERSION.jar
+export STREAMING_JAR=$HADOOP_HOME/contrib/streaming/hadoop-streaming-$HADOOP_VERSION.jar
