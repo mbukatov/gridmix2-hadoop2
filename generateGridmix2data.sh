@@ -61,7 +61,7 @@ ${HADOOP_HOME}/bin/hadoop jar \
   -D mapreduce.randomtextwriter.maxwordsvalue=10000 \
   -D mapred.output.compress=true \
   -D mapred.map.output.compression.type=BLOCK \
-  -outFormat org.apache.hadoop.mapred.SequenceFileOutputFormat \
+  -outFormat org.apache.hadoop.mapreduce.lib.output.SequenceFileOutputFormat \
   ${VARCOMPSEQ} &
 
 
@@ -75,7 +75,7 @@ ${HADOOP_HOME}/bin/hadoop jar \
   -D mapreduce.randomtextwriter.maxwordsvalue=100 \
   -D mapred.output.compress=true \
   -D mapred.map.output.compression.type=BLOCK \
-  -outFormat org.apache.hadoop.mapred.SequenceFileOutputFormat \
+  -outFormat org.apache.hadoop.mapreduce.lib.output.SequenceFileOutputFormat \
   ${FIXCOMPSEQ} &
 
 
@@ -88,7 +88,7 @@ ${HADOOP_HOME}/bin/hadoop jar \
   -D mapreduce.randomtextwriter.minwordsvalue=0 \
   -D mapreduce.randomtextwriter.maxwordsvalue=200 \
   -D mapred.output.compress=false \
-  -outFormat org.apache.hadoop.mapred.TextOutputFormat \
+  -outFormat org.apache.hadoop.mapreduce.lib.output.TextOutputFormat \
   ${VARINFLTEXT} &
 
 
